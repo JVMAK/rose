@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: rose-example-money-transfer
+  profiles:
+    active: development
+---
+server:
+  port: 5000
+
+---
+spring:
+  profiles: development
+logging:
+  level:
+    logger.root: INFO
+    com.tazhi.rose: DEBUG
+    
+mongodb:
+  eventstore:
+    host: localhost
+    port: 27017
+    database: event_sourcing
+  snapshot:
+    host: localhost
+    port: 27017
+    database: event_sourcing
+    
+kafka:
+  eventbus:
+    bootstrapServers: localhost:9092
