@@ -26,17 +26,17 @@ TODO:
 4. create 2 accounts with some balance and then make transfer:
 
 create 2 accounts:
-http://localhost:5001/account/create?accountId=a1&balance=300
-http://localhost:5001/account/create?accountId=a2&balance=200
+* http://localhost:5001/account/create?accountId=a1&balance=300
+* http://localhost:5001/account/create?accountId=a2&balance=200
 
 make transfer:
-http://localhost:5000/transfer/create?fromAccountId=a1&toAccountId=a2&amount=50 this will return a generated transactionId
+* http://localhost:5000/transfer/create?fromAccountId=a1&toAccountId=a2&amount=50 this will return a generated transactionId
 
 get transfer status:
-http://localhost:5000/transfer/get?transactionId=<transactionId>
+* http://localhost:5000/transfer/get?transactionId=<transactionId>
 
 get accounts' balance:
-http://localhost:5001/account/get?accountId=a1
-http://localhost:5001/account/get?accountId=a2
+* http://localhost:5001/account/get?accountId=a1
+* http://localhost:5001/account/get?accountId=a2
 
 5. play around, have fun, and feed back, thank you!
